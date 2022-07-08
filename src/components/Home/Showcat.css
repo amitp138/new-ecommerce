@@ -1,0 +1,21 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 40px;
+    margin: 40px;
+}
+#categories{
+    padding: 5px;
+   
+      font-weight: bolder;
+      text-decoration: none;   
+}
+.categories{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px grey;
+    border-radius: 20px;
+}
