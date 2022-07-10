@@ -40,6 +40,9 @@
 }
 .heading{
     padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .Items{
    
@@ -85,5 +88,13 @@
     font-size: 16px;
         justify-content: center;
         width: 180px;
-    height: 40px;
+    height: 30px;
+}
+.btncheckout{
+    font-size: 16px;
+        justify-content: center;
+        width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: beige;
 }

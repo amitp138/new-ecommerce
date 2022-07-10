@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link } from 'react-router-dom'
 import "./Products.css";
 import SingleProduct from "./SingleProduct";
 const Products = (props) => {
@@ -31,6 +31,7 @@ const Products = (props) => {
     <div className="Items">
       <div className="filter">
         <h1>Filter</h1>
+       
         <div className="inp">
         <button  name="delhivery" onClick={handledelivery}>
           delivery
@@ -54,18 +55,23 @@ const Products = (props) => {
       </div>
       <div>
         <div className="heading">
+          <div >
           {props.keyId === "fgsa2142fa" ? (
             <h1>Keyboaard </h1>
           ) : (
             <h1>Headphones</h1>
           )}
+          </div>
+           <button className="btncheckout">
+        <Link  to="/checkout">Checkout</Link>
+        </button>
         </div>
         <div className="Itemdiv">
           {filterdata.map((res) => {
             return <SingleProduct res={res} />;
           })}
         </div>
-        <button>checkout</button>
+        
       </div>
     </div>
   );

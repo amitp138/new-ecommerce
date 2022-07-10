@@ -1,7 +1,11 @@
-.home {
+.checkout {
     display: flex;
+    flex-direction: column;
+    margin: 0;
   }
   .productContainer  {
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 .cartimg{
@@ -14,10 +18,23 @@ margin: 10px;
 
 }
 
-.inp{
+.input{
   width: 40px;
   height: 10px;
 }
 .filters{
  top: 0;
 }
+th{
+  padding-left: 40px;
+  margin: 20px;
+ }
+ td{
+  padding-left: 40px;
+  margin: 20px;
+ }
+ .checkheading{
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+ }

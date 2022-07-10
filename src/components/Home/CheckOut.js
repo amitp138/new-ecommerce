@@ -16,9 +16,17 @@ const Cart = () => {
       cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
     );
   }, [cart]);
+ 
 
   return (
-    <div className="home">
+    <div className="checkout">
+      <div className="checkheading">
+      <h1>checkout</h1>
+      <div className="filters summary">
+        <span className="title">Subtotal ({cart.length}) items</span>
+        <span style={{ fontWeight: 700, fontSize: 20 }}>Total: ₹ {total}</span>
+      </div>
+      </div>
       <div className="productContainer">
       <table>
             <tr>
@@ -36,7 +44,7 @@ const Cart = () => {
            <td> <span>{prod.name}</span></td>
             <td> ₹ {prod.price}</td>
            <td> <input
-           className="inp"
+           className="input"
               type="number"
               value={prod.qty}
               onChange={(e) =>
@@ -67,10 +75,8 @@ const Cart = () => {
         ))}
         
         </table>
-      </div>
-      <div className="filters summary">
-        <span className="title">Subtotal ({cart.length}) items</span>
-        <span style={{ fontWeight: 700, fontSize: 20 }}>Total: ₹ {total}</span>
+      
+     
       </div>
     </div>
   );
