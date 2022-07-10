@@ -4,6 +4,8 @@ import Products from "./components/Home/Products";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import products from "./components/Home/products.json";
+import CheckOut from "./components/Home/CheckOut";
+
 function App() {
   const [keyId, setKeyID] = useState();
   const [data, setData] = useState();
@@ -27,6 +29,7 @@ function App() {
             element={<Products keyId={keyId} data={data}
            />}
           />
+          <Route path="/checkout" element={<CheckOut/>}/>
         </Route>
       </Routes>
     </div>

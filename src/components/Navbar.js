@@ -15,7 +15,9 @@ const Navbar = (props) => {
       <li > 
       <Link id='link' to={`/Categories/:${props.keyId}`}>categories</Link>
       </li>
-     
+     <li>
+      <Link id='link' to="/checkout">Checkout</Link>
+     </li>
       
       </ul>
       </nav>
