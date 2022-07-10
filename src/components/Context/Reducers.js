@@ -14,7 +14,12 @@ export const CartReducer = (state, action) => {
             c.id === action.payload.id ? (c.qty = action.payload.qty) : c.qty
           ),
         };
+        case "init_stored": {
+          return action.value
+       }
       default:
         return state;
     }
   };
+
+  
